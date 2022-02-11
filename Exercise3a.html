@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Exercise 3 reposive @media only screen</title>
+    <style>
+        .small {
+            background-color: rgb(216, 115, 0);
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -60px;
+            /* half width*/
+            margin-top: -20px;
+            /* half height*/
+            padding: 10px;
+        }
+        
+        .big {
+            width: 220px;
+            height: 100px;
+            font-size: 40px;
+            line-height: 100px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -110px;
+            /* half width*/
+            margin-top: -10px;
+            /* half height*/
+            padding: 10px;
+            background-color: rgb(76, 218, 100);
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .big {
+                display: none;
+            }
+        }
+        
+        @media only screen and (min-width: 769px) {
+            .small {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <span class="small">I am SMALL😥.</span>
+        <span class="big">I am BIG.😅</span>
+
+    </div>
+</body>
+
+</html>

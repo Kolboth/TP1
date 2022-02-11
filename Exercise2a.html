@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Exercise2 display flex</title>
+    <style>
+        .row_wrapper {
+            display: flex;
+            background-color: rgb(170, 170, 170);
+        }
+        
+        .column_wrapper {
+            margin: 5px;
+            width: 100%;
+        }
+        
+        .column_wrapper>.box {
+            margin: 5px 0px;
+            width: 100%;
+            height: 40px;
+            background-color: blue;
+            text-align: center;
+            border-radius: 4px;
+            line-height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row_wrapper">
+        <div class="column_wrapper">
+            <div class="box">😀</div>
+            <div class="box">😃</div>
+            <div class="box">😄</div>
+        </div>
+        <div class="column_wrapper">
+            <div class="box">😁</div>
+            <div class="box">😆</div>
+            <div class="box">😅</div>
+        </div>
+        <div class="column_wrapper">
+            <div class="box">😂</div>
+            <div class="box">🤣</div>
+            <div class="box">😋</div>
+        </div>
+        <div class="column_wrapper">
+            <div class="box">😍</div>
+            <div class="box">😊</div>
+        </div>
+    </div>
+</body>
+
+</html>
